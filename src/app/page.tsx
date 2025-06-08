@@ -3,6 +3,7 @@ import React from 'react';
 import HeroSection from './Component/HeroSection';
 import PricingSection from './Component/PricingSection';
 import AboutUsSection from './Component/AboutUsSection';
+import ContactUsSection from './Component/ContactUsSection';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
      <HeroSection />
      <PricingSection />
      <AboutUsSection/>
+     <ContactUsSection/>
     </div>
   );
 };
