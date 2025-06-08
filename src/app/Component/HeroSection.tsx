@@ -20,6 +20,10 @@ const HeroSection = () => {
       alt: "Modern classrooms with latest technology"
     },
     {
+      src: "https://scontent.fdac5-1.fna.fbcdn.net/v/t39.30808-6/482127883_1632609247383692_9150020302442066238_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=33274f&_nc_eui2=AeEkp2gByr45LFc9bfAqAgOPsUTS-E5x8qexRNL4TnHyp1OzBVu6IF2yZGNEAHdSZ7iK6NBg47IZjIE2a66aCqZj&_nc_ohc=CKmPWlSivpUQ7kNvwFe0xHa&_nc_oc=AdkogjG5CSIyU3yGCMnzvBS8nN9-tbdWqxJcy_juMSpRpAhiimF0bI2q1NRTM5Yw4pE&_nc_zt=23&_nc_ht=scontent.fdac5-1.fna&_nc_gid=Nb16G5rFsu9KvVrbFOsxVw&oh=00_AfP7AGGFcwAAba3XduYTRdF_FmttTJedJv0i57Nn8UiB3Q&oe=684BE018",
+      alt: "Modern classrooms with latest technology"
+    },
+    {
       src: "https://scontent.fdac5-1.fna.fbcdn.net/v/t39.30808-6/490174389_1232165858910394_3890679899034222046_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFvTO9zqCiD7pNBVmQX8IuGebUiazaxW8x5tSJrNrFbzP5tyRGNnP1dcF_7uqwewSFtZqhQV5usStQ_9ooLZBnS&_nc_ohc=8BQXXrmVKY0Q7kNvwHYOnTq&_nc_oc=AdlY0jJpcdjMrOhL5FFGJeyjGCFtWDIwdLrMRre1p3sQkupOqzg3RNqvBtE76VnnTz8&_nc_zt=23&_nc_ht=scontent.fdac5-1.fna&_nc_gid=4fXFbvnqkr1Sc1ZjZQ3KLw&oh=00_AfMFXmcEwFQod9cPr1gpwXoIgbRasxayDPYvQ6zJVXSFxw&oe=684BB88B",
       alt: "Expert instructors teaching students"
     },
@@ -31,10 +35,15 @@ const HeroSection = () => {
       src: "https://scontent.fdac5-2.fna.fbcdn.net/v/t39.30808-6/493934079_1247077990752514_7878314356312251893_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFu2Gj0Kjbu-6Q4aXTD5Azbmyy3XFTKRGibLLdcVMpEaMrbJD5NWpTbTpP9VL3Dy8HdVlc7CQJ70Ydo1eHx88eR&_nc_ohc=w-k1WGdd-kIQ7kNvwEd0OZN&_nc_oc=AdmJ0x-vMuhbaFVJ6fZuVqQbuG4u29mt4-w2lNiIZKu32EXh8h52mgw5nxMAt2U-XtA&_nc_zt=23&_nc_ht=scontent.fdac5-2.fna&_nc_gid=TiXs3vRsUfTrh9wKuk4WJg&oh=00_AfM26kqaR7PVkqh8jE_bxpoXa3AQkITY2si02t3I4u4cHQ&oe=684BA674",
       alt: "Graduates celebrating their career success"
     }
+    ,
+    {
+      src: "https://scontent.fdac5-2.fna.fbcdn.net/v/t39.30808-6/482131679_1632609300717020_46047690453071646_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=33274f&_nc_eui2=AeEbt-UCG_ZGkGcSrrtpv9seVeVxNsftEclV5XE2x-0RyWDKZywUzFopmDewM8GETompL6fAFksWnO_RBfAsOFzs&_nc_ohc=RfzyoUm0L5UQ7kNvwGNp7hx&_nc_oc=AdkHHEEJD85NfMZ9LSDeQ-XNMCHvjSW6uNwnbMRJIH5a3TitKhwaneg3ofbiGjVOLx0&_nc_zt=23&_nc_ht=scontent.fdac5-2.fna&_nc_gid=wHMHNkpGJR1l3vT1kRcwug&oh=00_AfMwYc4-cUy0NMrSfPGgtIQLo7d-qjQZuP0g1Ae_TJSQtg&oe=684BB1D1",
+      alt: "Graduates celebrating their career success"
+    }
   ];
 
   return (
-    <section className="bg-background text-foreground pt-32 pb-20 md:pt-48 md:pb-32">
+    <section className="bg-background text-foreground pt-32 pb-16 md:pt-48 md:pb-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
@@ -64,9 +73,10 @@ const HeroSection = () => {
               <CarouselContent>
                 {carouselImages.map((image, index) => (
                   <CarouselItem key={index}>
-                    <div className="p-1">
-                      <Card>
-                        <CardContent className="flex aspect-[4/3] items-center justify-center p-0 rounded-lg overflow-hidden">
+                    <div className="p-0">
+                      <Card className="p-0 m-0 shadow-none border-none">
+                        {/* <CardContent className="flex aspect-[4/3] items-center justify-center p-0 rounded-lg overflow-hidden"> */}
+                           <CardContent className="p-0 m-0 aspect-[4/3] overflow-hidden rounded-lg">
                            <Image
                               src={image.src}
                               alt={image.alt}
