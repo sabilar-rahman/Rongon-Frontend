@@ -1,15 +1,15 @@
 
 import React from 'react';
 import HeroSection from './Component/HeroSection';
-import PricingSection from './Component/PricingSection';
 import AboutUsSection from './Component/AboutUsSection';
 import ContactUsSection from './Component/ContactUsSection';
+import CourseWeOfferSection from './Component/CourseWeOfferSection';
 
 const Home = () => {
   return (
     <div>
      <HeroSection />
-     <PricingSection />
+     <CourseWeOfferSection />
      <AboutUsSection/>
      <ContactUsSection/>
     </div>

@@ -40,24 +40,22 @@ const Navbar = () => {
 
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex md:items-center md:space-x-6 lg:space-x-8">
-            <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-              Features
+           
+            <a href="#courses" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+              Course We Offer
             </a>
-            <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-              Pricing
-            </a>
-            <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            <a href="#about" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
               About Us
             </a>
-            <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            <a href="#contact" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
               Contact
             </a>
           </nav>
 
           {/* CTA and Mobile Menu Button */}
           <div className="flex items-center gap-4">
-            <Button className="hidden sm:inline-flex" variant="secondary">Sign In</Button>
-            <Button className="hidden sm:inline-flex">Get Started</Button>
+            <Button className="hidden sm:inline-flex" >Sign In</Button>
+            {/* <Button className="hidden sm:inline-flex">Get Started</Button> */}
             
             {/* Mobile Menu Toggle Button */}
             <div className="md:hidden">
@@ -74,21 +72,19 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-background border-t">
           <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col space-y-4">
-            <a href="#" className="text-base font-medium text-muted-foreground transition-colors hover:text-primary">
-              Features
+           
+            <a href="#courses" className="text-base font-medium text-muted-foreground transition-colors hover:text-primary">
+              Course We Offer
             </a>
-            <a href="#" className="text-base font-medium text-muted-foreground transition-colors hover:text-primary">
-              Pricing
-            </a>
-            <a href="#" className="text-base font-medium text-muted-foreground transition-colors hover:text-primary">
+            <a href="#about" className="text-base font-medium text-muted-foreground transition-colors hover:text-primary">
               About Us
             </a>
-            <a href="#" className="text-base font-medium text-muted-foreground transition-colors hover:text-primary">
+            <a href="#contact" className="text-base font-medium text-muted-foreground transition-colors hover:text-primary">
               Contact
             </a>
             <div className="flex flex-col space-y-2 pt-2 border-t">
                 <Button variant="secondary">Sign In</Button>
-                <Button>Get Started</Button>
+                {/* <Button>Get Started</Button> */}
             </div>
           </nav>
         </div>

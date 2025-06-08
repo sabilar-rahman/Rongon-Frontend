@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from 'lucide-react';
 
-const PricingSection = () => {
+const CourseWeOfferSection = () => {
   const courses = [
     {
       name: "Computer Office Application",
@@ -33,7 +33,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="pricing" className="bg-muted/40 py-20 sm:py-32">
+    <section id="courses" className="bg-muted/40 py-20 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -80,4 +80,4 @@ const PricingSection = () => {
   );
 };
 
-export default PricingSection;
+export default CourseWeOfferSection;
